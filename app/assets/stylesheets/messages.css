@@ -1,0 +1,147 @@
+.wrapper{
+  display: flex;
+  height: 100vh;
+}
+
+/* サイドバー */
+.side_bar{
+  width: 300px;
+  background-color: #253141;
+  height: 100vh;
+}
+.side_bar_header{
+  height: 100px;
+  padding: 0px 20px;
+}
+.side_bar_main{
+  height: calc(100vh - 100px);
+  background-color: #2F3E51;
+  padding: 0px 20px;
+  overflow: scroll;
+}
+.side_bar_btn{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user_name a{
+  color: #FAFAFA;
+  font-size: 16px;
+  text-decoration: none;
+}
+.chat_btn a{
+  padding: 14px;
+  color: deepskyblue;
+  font-size: 10px;
+  border: 1px solid lightblue;
+  text-decoration: none;
+}
+.side_bar_chat_room{
+  padding: 20px 0px 40px 0px;
+}
+.side_bar_chat_room a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* メイン部分 */
+.main_chat{
+  width: calc(100% - 300px);
+  height: 100vh;
+  background-color: #ffffff;
+}
+.main_header{
+  height: 100px;
+  padding: 0px 40px;
+}
+.main_header_btn{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.main_main{
+  height: calc(100vh - 190px);
+  background-color: #FAFAFA;
+  padding: 46px 20px 0px 20px;
+  overflow: scroll;
+}
+.main_header_chat_name{
+  padding-top: 36px;
+  font-size: 24px;
+  color: #333;
+}
+.main_header_chat_btn{
+  padding-top: 40px;
+}
+.main_header_chat_btn a{
+  text-decoration: none;
+  color: darkred;
+  padding: 20px;
+  border: 1px darkred solid;
+}
+.main_main_messages{
+  margin-bottom: 40px;
+}
+.main_main_name_time{
+  display: flex;
+  padding-top: 10px;
+}
+.main_main_name{
+  padding-right: 10px;
+  color: #434A54;
+  font-size: 16px;
+}
+.main_main_time{
+  color: #999;
+  font-size: 12px;
+}
+.main_main_message{
+  padding: 10px 0;
+  color: #434A54;
+  font-size: 14px;
+}
+
+/* フッター部分 */
+.main_footer{
+  height: 90px;
+  background-color: #DDDDDD;
+  padding: 20px 40px;
+}
+.main_footer_contact-form{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.main_footer_input{
+  background-color: white;
+  display: flex;
+  width: 100%;
+  margin-right: 15px;
+}
+.main_footer_form-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.main_footer_name_form{
+  height: 50px;
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+}
+.main_footer_send {
+  height: 50px;
+  padding: 0 20px;
+  color: white;
+  font-size: 16px;
+  background-color: #38AEF0;
+}
+.hidden {
+  display: none;
+}
