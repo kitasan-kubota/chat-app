@@ -2,7 +2,7 @@
   <div class="main_header_btn">
     <div class="main_header_left">
       <div class="main_header_chat_name">
-        chat_name
+        <%= @room.name %>
       </div>
     </div>
     <div class="main_header_right">
@@ -13,32 +13,7 @@
   </div>
 </div>
 <div class="main_main">
-  <div class="main_main_messages">
-    <div class="main_main_name_time">
-      <div class="main_main_name">
-        OK
-      </div>
-      <div class="main_main_time">
-        2020/10/09
-      </div>
-    </div>
-    <div class="main_main_message">
-      おはよう
-    </div>
-  </div>
-  <div class="main_main_messages">
-    <div class="main_main_name_time">
-      <div class="main_main_name">
-        Tom
-      </div>
-      <div class="main_main_time">
-        2020/10/09
-      </div>
-    </div>
-    <div class="main_main_message">
-      おはよう
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <div class="main_footer">
   <%= form_with model: [@room, @message], class: 'main_footer_contact-form', local: true do |f| %>
