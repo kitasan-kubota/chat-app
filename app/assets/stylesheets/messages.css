@@ -56,13 +56,92 @@
   height: 100px;
   padding: 0px 40px;
 }
+.main_header_btn{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
 .main_main{
   height: calc(100vh - 190px);
   background-color: #FAFAFA;
   padding: 46px 20px 0px 20px;
+  overflow: scroll;
 }
+.main_header_chat_name{
+  padding-top: 36px;
+  font-size: 24px;
+  color: #333;
+}
+.main_header_chat_btn{
+  padding-top: 40px;
+}
+.main_header_chat_btn a{
+  text-decoration: none;
+  color: darkred;
+  padding: 20px;
+  border: 1px darkred solid;
+}
+.main_main_messages{
+  margin-bottom: 40px;
+}
+.main_main_name_time{
+  display: flex;
+  padding-top: 10px;
+}
+.main_main_name{
+  padding-right: 10px;
+  color: #434A54;
+  font-size: 16px;
+}
+.main_main_time{
+  color: #999;
+  font-size: 12px;
+}
+.main_main_message{
+  padding: 10px 0;
+  color: #434A54;
+  font-size: 14px;
+}
+
+/* フッター部分 */
 .main_footer{
   height: 90px;
   background-color: #DDDDDD;
   padding: 20px 40px;
+}
+.main_footer_contact-form{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.main_footer_input{
+  background-color: white;
+  display: flex;
+  width: 100%;
+  margin-right: 15px;
+}
+.main_footer_form-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.main_footer_name_form{
+  height: 50px;
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+}
+.main_footer_send {
+  height: 50px;
+  padding: 0 20px;
+  color: white;
+  font-size: 16px;
+  background-color: #38AEF0;
+}
+.hidden {
+  display: none;
 }
