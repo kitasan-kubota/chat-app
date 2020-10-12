@@ -41,14 +41,14 @@
   </div>
 </div>
 <div class="main_footer">
-  <form class="main_footer_contact-form">
+  <%= form_with model: [@room, @message], class: 'main_footer_contact-form', local: true do |f| %>
     <div class=main_footer_input>
-      <input type="text" placeholder="type a message" class="main_footer_name_form">
+      <%= f.text_field :content, class: 'main_footer_name_form', placeholder: 'type a message' %>
       <label class="main_footer_form-image">
         <span class="main_footer_image_file">画像</span>
-        <input type="file" class="hidden">
+        <%= f.file_field :image, class: 'hidden' %>
       </label>
     </div>
-    <input type="submit" value="送信" class="main_footer_send">
-  </form>
+    <%= f.submit '送信', class: 'main_footer_send' %>
+  <% end %>
 </div>
